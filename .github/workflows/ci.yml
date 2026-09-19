@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  pull_request:
+
+jobs:
+  demo-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "CI says hello: pull request received for the walkthrough demo."
+      - name: Confirm readiness
+        run: echo "Walkthrough CI check finished successfully."
